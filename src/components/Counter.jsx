@@ -29,8 +29,10 @@ class Counter extends Component {
   // }
 
   handleIncrement = product => {
-    console.log(product);
     this.setState({ value: this.state.value + 1 });
+  };
+  handleDecncrement = product => {
+    this.setState({ value: this.state.value - 1 });
   };
 
   render() {
@@ -46,7 +48,14 @@ class Counter extends Component {
           onClick={() => this.handleIncrement()}
           className=" btn btn-outline-primary m-3 btn-sm"
         >
-          Increment
+          Increment +
+        </button>
+        <button
+          style={{ fontSize: 25 }}
+          onClick={() => this.handleDecncrement()}
+          className=" btn btn-outline-primary m-3 btn-sm"
+        >
+          DECREMENT -
         </button>
         {/* {this.state.tags.length === 0 && "Please create a new tag!!"}
         {this.randertags()} */}
