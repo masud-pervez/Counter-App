@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Counter from "./Counter";
-
+import ImageSlider from "./image";
+// import  from "./image";
 class Counters extends Component {
   state = {
     Counters: [
@@ -27,6 +28,7 @@ class Counters extends Component {
   render() {
     return (
       <div>
+      {/* <div>
         <button
           onClick={this.handleReset}
           className="btn btn-primary btn-sm m-2">Reset</button>
@@ -36,7 +38,10 @@ class Counters extends Component {
             onDelete={this.handleDelete}
             counter={counter}
           />
-        ))}
+        ))},
+      </div>, */}
+      {/* <image /> */}
+      <ImageSlider />
       </div>
     );
   }
